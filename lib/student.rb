@@ -9,6 +9,8 @@ class Student
     new_student = row[1]
     new_student = row[2]
 
+    new_student
+
   end
 
   def self.all
