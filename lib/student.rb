@@ -30,7 +30,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHEN name = ?
+      WHERE name = ?
       LIMIT 1
     SQL
 
@@ -65,4 +65,3 @@ class Student
     DB[:conn].execute(sql)
   end
 end
- 
